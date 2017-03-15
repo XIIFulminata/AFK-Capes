@@ -13,6 +13,11 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>    
+    
 <link rel="stylesheet" href="app.css">
     
 </head>
@@ -30,20 +35,38 @@
             
             </div>
             <div class="row player-data-row">
-                <div class="col player-skills-col">
+                <div class="col player-skills-col col-md-6">
                     <div class="player-skill-row psr1">
-                        <div class="player-skill-square" id="player-attack">
-                        
+                        <div class="col col-md-4 player-skill-square" id="player-attack">
+                            <img src="assets/small-skill-icons/Attack-icon.png">
+                            <h2 class="player-attack-level">-</h2>
+                            <!--
+                            <div class="skill-icon-small hw">
+                                <img src="assets/small-skill-icons/Attack-icon.png">
+                            </div>
+                            <div class="player-level hw">
+                                <h2 class="player-attack-level">-</h2>
+                            </div>-->
                         </div>
-                        <div class="player-skill-square" id="player-constitution">
-                        
+                        <div class="col col-md-4 player-skill-square" id="player-constitution">
+                            <div class="skill-icon-small hw">
+                                <img src="assets/small-skill-icons/Constitution-icon.png">
+                            </div>
+                            <div class="player-level hw">
+                                <h2 class="player-constitution-level">-</h2>
+                            </div>
                         </div>
-                        <div class="player-skill-square" id="player-mining">
-                        
+                        <div class="col col-md-4 player-skill-square" id="player-mining">
+                            <div class="skill-icon-small hw">
+                                <img src="assets/small-skill-icons/Mining-icon.png">
+                            </div>
+                            <div class="player-level hw">
+                                <h2 class="player-mining-level">-</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col player-misc-col">
+                <div class="col player-misc-col  col-md-6">
                 
                 </div>
             </div>
