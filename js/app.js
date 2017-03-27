@@ -3,7 +3,7 @@ $(document).ready(function() {
     var playerData;
     
     $("#go-btn").click(function() {
-        getPlayerData("xiifulminata").done(function(data) {
+        getPlayerData(document.getElementById("player-name-input").value).done(function(data) {
         playerData = formatPlayerData(data);
         //var str = $("#player-attack-level").text('99');
         //console.log(str);
