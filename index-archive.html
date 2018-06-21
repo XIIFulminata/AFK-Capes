@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+    
+<title>AFK Capes</title>
+    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="app.css">
+    
+</head>
+
+<body class="full-height">
+    <div class="container-fluid full-height">
+    <div class="row full-height">
+        <div class="column col-md-4 full-height" style="background-color: red;">
+            <div class="row">
+                <h1>AFK Capes</h1>
+            </div>
+        </div>
+        <div class="column col-md-8 full-height" style="background-color: blue;">
+            <div class="row player-name-row">
+            <p>Player Name: </p>
+            <input id="player-name-input">
+            <!-- http://services.runescape.com/m=hiscore/compare?user1=XIIFulminata -->
+            <button type="button" class="btn btn-default" id="go-btn">Go</button>
+            </div>
+            <div class="row player-data-row">
+                <div class="col player-skills-col col-md-6">
+                    <div class="player-skill-row psr1">
+                        
+                        <div class="col-md-9">
+                            <table class="table">
+                                <thead>
+                                    <!--   atk - const - min    -->
+                                    <tr>
+                                        <th>
+                                            <div class="row  player-skill-row player-skill-icon-col">
+                                                <div class="col col-xs-6">
+                                                <img src="assets/small-skill-icons/Attack-icon.png">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p id="player-attack-level" class="player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Constitution-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-agility-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row  player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Mining-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-smithing-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!--   str - agil - smith    -->
+                                    <tr>
+                                        <th>
+                                            <div class="row  player-skill-row player-skill-icon-col">
+                                                <div class="col col-xs-6">
+                                                <img src="assets/small-skill-icons/Strength-icon.png">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-strength-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Agility-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-agility-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row  player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Smithing-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-smithing-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!--   def - herb - fish    -->
+                                    <tr>
+                                        <th>
+                                            <div class="row  player-skill-row player-skill-icon-col">
+                                                <div class="col col-xs-6">
+                                                <img src="assets/small-skill-icons/Defence-icon.png">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-strength-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Herblore-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-agility-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row  player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Fishing-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-smithing-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!--   rng - theif - cook    -->
+                                    <tr>
+                                        <th>
+                                            <div class="row  player-skill-row player-skill-icon-col">
+                                                <div class="col col-xs-6">
+                                                <img src="assets/small-skill-icons/Ranged-icon.png">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-strength-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Thieving-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-agility-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row  player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Cooking-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-smithing-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!--   pray - craft - fm    -->
+                                    <tr>
+                                        <th>
+                                            <div class="row  player-skill-row player-skill-icon-col">
+                                                <div class="col col-xs-6">
+                                                <img src="assets/small-skill-icons/Prayer-icon.png">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-strength-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Crafting-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-agility-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row  player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Firemaking-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-smithing-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!--   mage - fletch - wc    -->
+                                    <tr>
+                                        <th>
+                                            <div class="row  player-skill-row player-skill-icon-col">
+                                                <div class="col col-xs-6">
+                                                <img src="assets/small-skill-icons/Magic-icon.png">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-strength-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Fletching-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-agility-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row  player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Woodcutting-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-level" id="player-woodcutting-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!--   rc - slay - farm    -->
+                                    <tr>
+                                        <th>
+                                            <div class="row  player-skill-row player-skill-icon-col">
+                                                <div class="col col-xs-6">
+                                                <img src="assets/small-skill-icons/Runecrafting-icon.png">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-strength-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Slayer-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-agility-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row  player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Farming-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-smithing-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!--   con - hunt - sum    -->
+                                    <tr>
+                                        <th>
+                                            <div class="row  player-skill-row player-skill-icon-col">
+                                                <div class="col col-xs-6">
+                                                <img src="assets/small-skill-icons/Construction-icon.png">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-strength-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Hunter-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-agility-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row  player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Summoning-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-smithing-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!--   dung - div - inv    -->
+                                    <tr>
+                                        <th>
+                                            <div class="row  player-skill-row player-skill-icon-col">
+                                                <div class="col col-xs-6">
+                                                <img src="assets/small-skill-icons/Dungeoneering-icon.png">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-strength-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Divination-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-agility-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div class="row  player-skill-row">
+                                                <div class="col col-xs-6 player-skill-icon-col">
+                                                <img src="assets/small-skill-icons/Invention-icon.png" style="">
+                                                </div>    
+                                                <div class="col col-xs-6 player-skill-level-col">
+                                                <p class="player-smithing-level player-level">-</p>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col player-misc-col  col-md-6">
+                
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        </div>
+    
+    
+    </div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>   
+
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script src="js/app.js"></script>
+ 
+    
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+div {
+    font-size: 24px;
+    font-family: verdana;
+    //color: antiquewhite;
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    height: 97vh
+    }
+
+.wrapper > div{
+    background: #eee;
+    padding: 1em;
+    }
+
+
+.wrapper{
+    font: red;
+}
+
+.main {
+    grid-row: 1/3;
+    grid-column: 2/4;
+}
+
+.skill_box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 0.5em;
+    
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    
+}
+
+.title_row{
+    grid-column: 1/3;
+    justify-self: center}
+
+.right {
+    justify-self: end;
+}
+
+.skill_box > div, .main > div {
+    align-self: center;
+}
+
+#woodcutting {
+    background: #bc804f;
+}
+
+#farming {
+    background: #73ef9a;
+}
+
+#slayer {
+    background: #726a63;
+}
+
+#herblore {
+    background: #07b558;
+}
+
+#agility {
+    background: #aa89c4;
+}
+
+#dungeoneering {
+    background: #e59d59;
+}
+
+#divination {
+    background: #726a63;
+}
+
+#fishing {
+    background: #496fb2;
+}
