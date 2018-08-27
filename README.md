@@ -11,28 +11,26 @@
 ## Supported Skills
 I've only incuded skill that would reasonably be trained with repeatables / dailies. Methods and skills are listed below. <br>
 
-#### Woodcutting
+#### Woodcutting (60+)
 * Divine Yew Trees (Exteneded)
 
-#### Farming
-* Wood Trees
-* Crystal Tree
-* Fruit Trees (Harvest)
-* Herb Runs (Harvest)
+#### Farming (94+)
+* Wood Trees (6 Patches, Protected)
+* Crystal Tree 
 
-#### Slayer
-* Abyssal Demon Slayer Mask
-* Dark Beast Slayer Mask
-* Gargoyle Slayer Mask
+#### Slayer (90+)
+* Abyssal Demon Slayer Mask / Helm (Avg: 240)
+* Dark Beast Slayer Mask / Helm (Avg: 240)
+* Gargoyle Slayer Mask / Helm (Avg: 240)
 
 #### Herblore
 * Warbands (75 items)
-* Supply Run (1/3 Days)
+* Supply Run (10 Supplies, 1/3 Days)
 
-#### Agility
-* Heifin Pillars
+#### Agility (75+)
+* Serenity Posts (Hefin Pillars)
 * Legendary JOT 
-* Supply Run (1/3 Days)
+* Supply Run (10 Supplies, 1/3 Days)
 * Penguin Hide and Seek (+ Polar Bears)
 
 #### Dungeoneering
@@ -42,5 +40,5 @@ I've only incuded skill that would reasonably be trained with repeatables / dail
 #### Divination
 * Divine Cache
 
-#### Fishing
+#### Fishing (90+)
 * Divine Rocktail Bubble (Extended)
