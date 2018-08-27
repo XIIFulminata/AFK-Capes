@@ -9,16 +9,38 @@
 
 
 ## Supported Skills
+I've only incuded skill that would reasonably be trained with repeatables / dailies. Methods and skills are listed below. <br>
 
-* Woodcutting
-* Farming
-* Slayer
-* Herblore
-* Agility
-* Dungeoneering
-* Divination
-* Fishing
+#### Woodcutting
+* Divine Yew Trees (Exteneded)
 
+#### Farming
+* Wood Trees
+* Crystal Tree
+* Fruit Trees (Harvest)
+* Herb Runs (Harvest)
 
+#### Slayer
+* Abyssal Demon Slayer Mask
+* Dark Beast Slayer Mask
+* Gargoyle Slayer Mask
 
-<a href="http://jovaunjackson.me/Daily-Capes/" target="_blank">!</a>
+#### Herblore
+* Warbands (75 items)
+* Supply Run (1/3 Days)
+
+#### Agility
+* Heifin Pillars
+* Legendary JOT 
+* Supply Run (1/3 Days)
+* Penguin Hide and Seek (+ Polar Bears)
+
+#### Dungeoneering
+* Daily Challenges (Extended)
+* Sinkholes
+
+#### Divination
+* Divine Cache
+
+#### Fishing
+* Divine Rocktail Bubble (Extended)
