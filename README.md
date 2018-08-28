@@ -29,9 +29,7 @@ I've only incuded skill that would reasonably be trained with repeatables / dail
 
 #### Agility (75+)
 * Serenity Posts (Hefin Pillars)
-* Legendary JOT 
 * Supply Run (10 Supplies, 1/3 Days)
-* Penguin Hide and Seek (+ Polar Bears)
 
 #### Dungeoneering
 * Daily Challenges (Extended)
