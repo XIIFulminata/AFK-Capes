@@ -1,4 +1,4 @@
-# [Daily-Scape: Max Efficiently](http://jovaunjackson.me/Daily-Capes/) --- WIP
+# [Daily-Scape: Max Efficiently](http://jovaunjackson.me/Daily-Capes/) --- WIP*
 
 ## How it Works
 1. Enable CORS with a browser [extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
@@ -40,3 +40,5 @@ I've only incuded skill that would reasonably be trained with repeatables / dail
 
 #### Fishing (90+)
 * Divine Rocktail Bubble (Extended)
+
+*XP rate for all skills is currently at 50k/day --- to be updated
