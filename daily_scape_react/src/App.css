@@ -1,0 +1,138 @@
+/*.App {*/
+  /*text-align: center;*/
+/*}*/
+
+/*.App-logo {*/
+  /*animation: App-logo-spin infinite 20s linear;*/
+  /*height: 40vmin;*/
+  /*pointer-events: none;*/
+/*}*/
+
+/*.App-header {*/
+  /*background-color: #282c34;*/
+  /*min-height: 100vh;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*font-size: calc(10px + 2vmin);*/
+  /*color: white;*/
+/*}*/
+
+/*.App-link {*/
+  /*color: #61dafb;*/
+/*}*/
+
+/*@keyframes App-logo-spin {*/
+  /*from {*/
+    /*transform: rotate(0deg);*/
+  /*}*/
+  /*to {*/
+    /*transform: rotate(360deg);*/
+  /*}*/
+/*}*/
+
+
+
+#woodcutting {
+    background: #bc804f;
+}
+
+#farming {
+    background: #73ef9a;
+}
+
+#slayer {
+    background: #726a63;
+}
+
+#herblore {
+    background: #07b558;
+}
+
+#agility {
+    background: #aa89c4;
+}
+
+#dungeoneering {
+    background: #e59d59;
+}
+
+#divination {
+    background: #726a63;
+}
+
+#fishing {
+    background: #496fb2;
+}
+
+/*.wrapper {*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+/*}*/
+
+/*.skill_box {*/
+    /*flex: 1 1 25%;*/
+/*}*/
+
+/*.main-box {*/
+    /*flex: 2 1 50%;*/
+/*}*/
+
+div {
+    font-size: 24px;
+    font-family: verdana;
+//color: antiquewhite;
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    height: 97vh
+}
+
+.wrapper > div{
+    background: #eee;
+    padding: 1em;
+}
+
+
+.wrapper{
+    font: red;
+}
+
+.main {
+    grid-row: 1/3;
+    grid-column: 2/4;
+}
+
+.skill_box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 0.5em;
+
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+
+}
+
+.title_row{
+    grid-column: 1/3;
+    justify-self: center}
+
+.right {
+    justify-self: end;
+}
+
+.skill_box > div, .main > div {
+    align-self: center;
+}
+
+img {
+    width: 100%;
+}
